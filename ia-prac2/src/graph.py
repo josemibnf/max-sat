@@ -102,7 +102,7 @@ class Graph(object):
         # Visualize
         dot.render(name, view=True, cleanup=True)
     
-    def complementary(self):
+    def complementary_edges(self):
         nodes = [wcnf.WCNFFormula().new_var() for _ in range(self.n_nodes)]
         edges = []
         for n1 in nodes:
